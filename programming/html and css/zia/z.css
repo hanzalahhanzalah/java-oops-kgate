@@ -1,0 +1,115 @@
+
+/* *{ margin: 0; */
+/* padding: 0; */
+
+
+body{
+
+    background-image: url(jj.jpg),url(c.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+
+
+}
+
+.box {
+    width: 400px;
+    margin: 400px auto;
+    display: block;
+    border:  solid;
+    height: 100px;
+ padding: 30px;
+border-width: 10px;
+border-right: double;
+border-top:groove;
+ border-width: 5px;
+ border-radius: 10px 30px 60px 35px;
+ border-style: double groove inset dotted;
+background-color: aqua ghostwhite palevioletred indigo;
+padding: 30px;
+
+
+
+}
+.center{
+
+    text-align: center;
+
+    
+
+
+}
+
+.fatima{
+    font: size 1.3rem;
+
+    padding: 5px;
+    margin: 34px;
+}
+#wow {
+    margin: 40px;
+    display: flex;
+
+
+}
+
+.menu {
+
+
+
+
+    background-color: green;
+
+
+    height: 40px;
+
+    width: 70%;
+
+    
+
+    margin-left: 225px;
+    border-radius: 40px;
+    background-color: green;
+    top:0px ;
+}
+
+
+
+
+
+.menu ul li {list-style: none;
+
+     float: left;
+     width: 10%;
+
+     height: 40px;
+     font-size: medium;
+     box-shadow: inset;
+     color:palegreen;
+     text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.menu ul li ul {display: none; 
+}
+
+.menu ul li:hover>ul { display: block;  padding: 0%;
+    background-color:rgb(15, 128, 0);
+}
+
+.menu ul li ul li { width: 70px;
+background-color :green ;
+text-align: center;
+border-radius: 8px;
+
+}
+.menu input { border: solid green;
+border-radius: 10px;
+padding: 3px;
+
+}
+

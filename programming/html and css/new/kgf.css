@@ -1,0 +1,38 @@
+
+
+body { background:rgba(0,0,0,0.5)    url();
+background-repeat: no-repeat;
+
+
+background-attachment:fixed ;
+
+background-size: auto;
+/* background-blend-mode: darken; */
+
+/* background-color: aqua; */
+
+background-position:center ;
+
+}
+ 
+
+
+
+.box { border: chocolate solid;
+
+
+background-clip: red content-box;
+background-clip:blue padding-box;
+background-origin:pink border-box;
+background-origin:pink content-box;
+
+}
+
+
+
+
+
+
+/* .box h1 {text-align: center;    padding: 10px; ; color: rgb(25, 0, 255);} */
+/* .box p {text-align:justify ;  padding-top: 10px; color: black;} */
+  /* p {color white;} */

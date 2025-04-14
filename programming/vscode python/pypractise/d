@@ -1,0 +1,122 @@
+Display the following
+menu to the user.
+1, Create a new file
+Display the file
+3) Add a new item to the file
+Make a selection 1, 2, or 3:
+Ask the user to enter 1, 2 or 3 of they Select
+anything other than 1, 2, or 3. 97. Should display
+message.
+mes
+of they select I, ask the User
+to enter a school subject and
+Save it to a new
+file Called.
+"Subject. Ext". of Should overwrite
+file
+any exiting file with new
+the Contents
+-, display
+of the "Subject txt" file.
+Select 3, ask the user to
+of they
+enter a new.
+• Sombject and save it to
+the file and display the entire contents
+of thy Select 2,
+of the file.
+Note: Run the program to test all
+the selection.
+ChatGPT
+Sure! Here's the code for the menu you described:
+
+python
+Copy code
+import os
+
+def create_new_file():
+    file_name = input("Enter the name of the new file: ")
+    with open(file_name, 'w') as file:
+        print("New file created.")
+
+def display_file_contents():
+    file_name = input("Enter the name of the file to display: ")
+    try:
+        with open(file_name, 'r') as file:
+            contents = file.read()
+            print("File contents:")
+            print(contents)
+    except FileNotFoundError:
+        print("File not found.")
+
+def add_new_item():
+    file_name = input("Enter the name of the file to add an item to: ")
+    try:
+        with open(file_name, 'a') as file:
+            new_item = input("Enter the new item: ")
+            file.write(new_item + "\n")
+            print("Item added to the file.")
+    except FileNotFoundError:
+        print("File not found.")
+
+def menu():
+    print("Menu:")
+   
+
+
+
+
+User
+MAKE SIMPLE AND EASY CODE
+ChatGPT
+Certainly! Here's a simplified version of the code that focuses on the basic functionality you described:
+
+python
+Copy code
+def create_new_file():
+    file_name = input("Enter the name of the new file: ")
+    with open(file_name, 'w') as file:
+        print("New file created.")
+
+def display_file_contents():
+    file_name = input("Enter the name of the file to display: ")
+    try:
+        with open(file_name, 'r') as file:
+            contents = file.read()
+            print("File contents:")
+            print(contents)
+    except FileNotFoundError:
+        print("File not found.")
+
+def add_new_item():
+    file_name = input("Enter the name of the file to add an item to: ")
+    with open(file_name, 'a') as file:
+        new_item = input("Enter the new item: ")
+        file.write(new_item + "\n")
+        print("Item added to the file.")
+
+def menu():
+    print("Menu:")
+    print("1) Create a new file")
+    print("2) Display a file")
+    print("3) Add a new item to a file")
+    choice = input("Make a selection (1, 2, or 3): ")
+    
+    if choice == '1':
+        create_new_file()
+    elif choice == '2':
+        display_file_contents()
+    elif choice == '3':
+        add_new_item()
+    else:
+        print("Invalid selection. Please enter 1, 2, or 3.")
+
+menu()
+This code retains the essential parts of the previous version but omits unnecessary error handling and file existence checks. However, please keep in mind that error handling and validation are important in real-world scenarios to ensure the program handles unexpected situations gracefully.
+
+
+
+
+
+
+
